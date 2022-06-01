@@ -22,11 +22,11 @@ VIDEO_EXTENSIONS = ["mp4", "ogv", "m4v", "webm"]
 # http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5
 
 
-st.title("Video Widget Examples")
+st.title("Hi Carl!")
 
-st.header("Local video files")
+st.header("Enjoy your drive!")
 st.write(
-    "You can use st.video to play a locally-stored video by supplying it with a valid filesystem path."
+    "Let start your augmented reality."
 )
 
 
