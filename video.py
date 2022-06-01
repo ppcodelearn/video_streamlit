@@ -79,7 +79,7 @@ vidurl = st.selectbox(
         "http://www.rochikahn.com/video/videos/zapatillas.mp4",
         "http://www.marmosetcare.com/video/in-the-wild/intro.webm",
         "https://www.orthopedicone.com/u/home-vid-4.mp4",
-        "https://www.youtube.com/watch?v=GgxXYqiJsU4&ab_channel=ppcode",
+        "https://www.youtube.com/watch?v=GgxXYqiJsU4",
     ),
     0,
     shorten_vid_option,
