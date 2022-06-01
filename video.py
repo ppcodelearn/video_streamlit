@@ -85,6 +85,7 @@ def shorten_vid_option(opt):
 # A random sampling of videos found around the web.  We should replace
 # these with those sourced from the streamlit community if possible!
 vidurl = st.selectbox(
+    "Pick which Uber",
     (
         "UberSGlass",
         "Uber+",
