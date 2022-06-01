@@ -23,9 +23,19 @@ VIDEO_EXTENSIONS = ["mp4", "ogv", "m4v", "webm"]
 # For sample video files, try the Internet Archive, or download a few samples here:
 # http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5
 
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image('saint.png')
+    # st.image("https://static.streamlit.io/examples/dog.jpg")
+
+with col3:
+    st.write(' ')
 image = Image.open('saint.png')
 
-st.image(image, caption='Saint-Gobain')
 st.title("Hi Carl!")
 
 st.header("Enjoy your drive!")
