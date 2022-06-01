@@ -38,9 +38,9 @@ image = Image.open('saint.png')
 
 st.title("Hi Carl!")
 
-st.header("Enjoy your drive!")
+# st.header("Enjoy your drive!")
 st.write(
-    "Let start your augmented reality."
+    "Enjoy your drive! Let start your augmented reality."
 )
 
 
@@ -62,7 +62,7 @@ files = get_video_files_in_dir(avdir)
 
 if len(files) == 0:
     st.write(
-        "Put some video files in your home directory (%s) to activate this player."
+        "Select a Uber type, you want (%s) to drive"
         % avdir
     )
 
@@ -85,18 +85,14 @@ def shorten_vid_option(opt):
 # A random sampling of videos found around the web.  We should replace
 # these with those sourced from the streamlit community if possible!
 vidurl = st.selectbox(
-    "Pick a video to play",
+    "Pick which Uber",
     (
-        "https://youtu.be/_T8LGqJtuGc",
-        "https://www.youtube.com/watch?v=kmfC-i9WgH0",
-        "https://www.youtube.com/embed/sSn4e1lLVpA",
-        "http://www.rochikahn.com/video/videos/zapatillas.mp4",
-        "http://www.marmosetcare.com/video/in-the-wild/intro.webm",
-        "https://www.orthopedicone.com/u/home-vid-4.mp4",
-        "https://www.youtube.com/watch?v=GgxXYqiJsU4",
+        "UberSGlass",
+        "Uber+",
+        "Uber+Pro",
     ),
     0,
     shorten_vid_option,
 )
 
-st.video(vidurl)
+st.video("https://youtu.be/vxI4ksEmxNw")
