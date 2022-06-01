@@ -68,7 +68,7 @@ if len(files) == 0:
 
 else:
     filename = st.selectbox(
-        "Select a Uber type, you want (%s) to drive" % avdir,
+        "Select a Uber type, you want to drive" % avdir,
         files,
         0,
     )
@@ -85,7 +85,6 @@ def shorten_vid_option(opt):
 # A random sampling of videos found around the web.  We should replace
 # these with those sourced from the streamlit community if possible!
 vidurl = st.selectbox(
-    "Pick which Uber",
     (
         "UberSGlass",
         "Uber+",
