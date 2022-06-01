@@ -48,7 +48,7 @@ files = get_video_files_in_dir(avdir)
 
 if len(files) == 0:
     st.write(
-        "Put some video files in your home directory (%s) to activate this player."
+        "Put some feature in your Uber."
         % avdir
     )
 
@@ -60,8 +60,8 @@ else:
     )
 
     st.video(os.path.join(avdir, filename))
-st.header("Remote video playback")
-st.write("st.video allows a variety of HTML5 supported video links, including YouTube.")
+st.header("Your Ipohe XR is connected")
+st.write("John is your driver")
 
 
 def shorten_vid_option(opt):
@@ -73,8 +73,8 @@ def shorten_vid_option(opt):
 vidurl = st.selectbox(
     "Pick a video to play",
     (
-        "https://youtu.be/_T8LGqJtuGc",
-        "https://www.youtube.com/watch?v=kmfC-i9WgH0",
+        "Uber without AR",
+        "Uber+",
         "https://www.youtube.com/embed/sSn4e1lLVpA",
         "http://www.rochikahn.com/video/videos/zapatillas.mp4",
         "http://www.marmosetcare.com/video/in-the-wild/intro.webm",
