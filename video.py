@@ -48,7 +48,7 @@ files = get_video_files_in_dir(avdir)
 
 if len(files) == 0:
     st.write(
-        "Put some feature in your Uber."
+        "Put some video files in your home directory (%s) to activate this player."
         % avdir
     )
 
@@ -73,8 +73,8 @@ def shorten_vid_option(opt):
 vidurl = st.selectbox(
     "Pick a video to play",
     (
-        "Uber without AR",
-        "Uber+",
+        "https://youtu.be/_T8LGqJtuGc",
+        "https://www.youtube.com/watch?v=kmfC-i9WgH0",
         "https://www.youtube.com/embed/sSn4e1lLVpA",
         "http://www.rochikahn.com/video/videos/zapatillas.mp4",
         "http://www.marmosetcare.com/video/in-the-wild/intro.webm",
