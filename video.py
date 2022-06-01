@@ -60,22 +60,22 @@ def get_video_files_in_dir(directory):
 avdir = os.path.expanduser("~")
 files = get_video_files_in_dir(avdir)
 
-if len(files) == 0:
-    st.write(
-        "Put some video files in your home directory (%s) to activate this player."
-        % avdir
-    )
+# if len(files) == 0:
+#     st.write(
+#         "Put some video files in your home directory (%s) to activate this player."
+#         % avdir
+#     )
 
-else:
-    filename = st.selectbox(
-        "Select a Uber type, you want (%s) to drive" % avdir,
-        files,
-        0,
-    )
+# else:
+filename = st.selectbox(
+    "Select a Uber type, you want (%s) to drive" % avdir,
+    files,
+    0,
+)
 
-    st.video(os.path.join(avdir, filename))
-st.header("Remote video playback")
-st.write("st.video allows a variety of HTML5 supported video links, including YouTube.")
+st.video(os.path.join(avdir, filename))
+# st.header("Remote video playback")
+# st.write("st.video allows a variety of HTML5 supported video links, including YouTube.")
 
 
 def shorten_vid_option(opt):
