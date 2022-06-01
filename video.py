@@ -73,9 +73,9 @@ else:
         0,
     )
 
-st.video(os.path.join(avdir, filename))
-st.header("Remote video playback")
-st.write("st.video allows a variety of HTML5 supported video links, including YouTube.")
+    st.video(os.path.join(avdir, filename))
+# st.header("Remote video playback")
+# st.write("st.video allows a variety of HTML5 supported video links, including YouTube.")
 
 
 def shorten_vid_option(opt):
