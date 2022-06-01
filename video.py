@@ -14,6 +14,8 @@
 
 import os
 import streamlit as st
+from PIL import Image
+
 
 # These are the formats supported in Streamlit right now.
 VIDEO_EXTENSIONS = ["mp4", "ogv", "m4v", "webm"]
@@ -21,7 +23,9 @@ VIDEO_EXTENSIONS = ["mp4", "ogv", "m4v", "webm"]
 # For sample video files, try the Internet Archive, or download a few samples here:
 # http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5
 
+image = Image.open('saint.png')
 
+st.image(image, caption='Saint-Gobain')
 st.title("Hi Carl!")
 
 st.header("Enjoy your drive!")
@@ -54,7 +58,7 @@ if len(files) == 0:
 
 else:
     filename = st.selectbox(
-        "Select a video file from your home directory (%s) to play" % avdir,
+        "Select a Uber type, you want (%s) to drive" % avdir,
         files,
         0,
     )
